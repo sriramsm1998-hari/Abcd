@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghibli Universe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🌙 THEME -->
+<button id="themeToggle">🌙</button>
+
+<!-- 🎵 MUSIC -->
+<button id="musicToggle">🎵</button>
+<audio id="bgMusic" loop>
+  <source src="https://cdn.pixabay.com/audio/2023/03/14/audio_6f0a1b3d7b.mp3">
+</audio>
+
+<header>
+  <h1>🌿 Ghibli Universe</h1>
+  <p>Where nature breathes and magic lives ✨</p>
+
+  <!-- SEARCH -->
+  <input type="text" id="searchInput" placeholder="Search worlds...">
+</header>
+
+<!-- CATEGORY FILTER -->
+<div class="filters">
+  <button onclick="filterCategory('all')">All</button>
+  <button onclick="filterCategory('nature')">Nature</button>
+  <button onclick="filterCategory('sky')">Sky</button>
+  <button onclick="filterCategory('spirit')">Spirit</button>
+</div>
+
+<!-- CLOUDS -->
+<div class="clouds"></div>
+
+<!-- PARTICLES -->
+<div class="particles"></div>
+
+<!-- CARDS -->
+<section id="cardContainer"></section>
+
+<footer>
+  ✨ Built with wonder ✨
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
